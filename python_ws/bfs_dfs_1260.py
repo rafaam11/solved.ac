@@ -33,9 +33,7 @@ def bfs(graph, start_node):
 
             for node_i in reversed_graph:
                 if node_i not in visited:
-                    # 방문 갈기기
                     visited.append(node_i)
-                    # 큐에 넣기
                     bfs_q.append(node_i)
     
     return visited
